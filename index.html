@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="hleft">
+                <svg id="home" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>
+            </div>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M19.5,9V1.5H16.5V9H13.5V1.5H10.5V9H7.5V1.5H4.65V9H3V10.5H21V9H19.5M19.5,13.5H16.5V21H13.5V13.5H10.5V21H7.5V13.5H4.65V21H3V22.5H21V21H19.5V13.5Z" /></svg>
+                <p class="title">Library</p>
+            </div>
+            <div class="hright">
+                <svg id="plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z" /></svg>
+            </div>
+        </div>
+        <div class="main">
+            <div id="overlay">
+                <p id="overlay-heading">Add Book</p>
+                <div class="book-details">
+                    <form action="#">
+                        <div class="list">
+                            <label for="">Title of Book</label>
+                            <input type="text" id="title">
+                        </div>
+                        <div class="list">
+                            <label for="author">Author</label>
+                            <input type="text" id="author">
+                        </div>
+                        <div class="list">
+                            <label for="pages">Number of Pages</label>
+                            <input type="number" id="pages">
+                        </div>
+                        <div class="list" id="radio-options">
+                            <div class="option">
+                                <label for="Read">Read</label>
+                                <input type="radio" id="Read" name="read-status">
+                            </div>
+                           <div class="option">
+                                <label for="unread">Unread</label>
+                                <input type="radio" id="unread" name="read-status">
+                           </div>
+                        </div>
+                    </form>
+                    <button type="submit">Add Book to Library</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+/* CSS reset */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #0b296e;
+    --overlay-box-corners: 2rem;
+}
+
+html, input[type="text"], input[type="number"], button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+/* FORMAT THE HEADER */
+.header {
+    background-color: var(--blue);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+svg {
+    width: 4rem;
+    height: 4rem;
+}
+
+svg path {
+    fill: white;
+}
+
+#plus, #home {
+    cursor: pointer;
+    width: 3rem;
+}
+
+.hleft, .hright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* FORMAT THE OVERLAY */
+#overlay{
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlay-heading {
+    width: 20rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top-left-radius: var(--overlay-box-corners);
+    border-top-right-radius: var(--overlay-box-corners);
+    color: white;
+    background-color: var(--blue);
+}
+
+.book-details {
+    width: 20rem;
+    height: 25rem;
+    padding: 1rem;
+    background-color: white;
+    color: var(--blue);
+    border-bottom-left-radius: var(--overlay-box-corners);
+    border-bottom-right-radius: var(--overlay-box-corners);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.list, .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#radio-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+button {
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: var(--overlay-box-corners);
+    cursor: pointer;
+}
+
+
+
