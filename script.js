@@ -3,5 +3,4 @@ const overlay = document.getElementById("overlay");
 
 plus.addEventListener('click', () => {
     overlay.style.display = "block";
-    
 })
