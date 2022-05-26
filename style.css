@@ -214,6 +214,10 @@ input[type="text"], input[type="number"] {
     background-color: green;
 }
 
+.unread {
+    background-color: red;
+}
+
 .remove {
     background-color: grey;
 }
