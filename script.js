@@ -62,6 +62,7 @@ function displayBook() {
     const remove = document.createElement('button');
     remove.innerHTML = "Remove";
     remove.classList.add('homepageBtn', 'remove');
+    remove.addEventListener('click', deleteBook);
     buttons.appendChild(remove);
 
     book.appendChild(title);
@@ -93,6 +94,10 @@ function addBookToShelf() {
     reset();
 }
 
+function deleteBook(e) {
+    e.currentTarget.parentNode.parentNode.remove();
+}
+
 function toggleReadStatus(e) {
     const classes = e.target.className.split(' ');
     if (classes.includes('read')) {
@@ -105,18 +110,6 @@ function toggleReadStatus(e) {
         e.target.classList.add('read');
         e.target.innerHTML = "Read";
     }
-    // readStatusBtn = document.getElementById('readStatus');
-    // readStatusButtonClasses = readStatusBtn.className.split(' ');
-    // if (readStatusButtonClasses.includes('read')) {
-    //     readStatusBtn.classList.remove('read');
-    //     readStatusBtn.classList.add('unread');
-    //     readStatusBtn.innerHTML = "Unread";
-    // }
-    // else {
-    //     readStatusBtn.classList.remove('unread');
-    //     readStatusBtn.classList.add('read');
-    //     readStatusBtn.innerHTML = "Read";
-    // }
 }
 
 function addOverlay() {
